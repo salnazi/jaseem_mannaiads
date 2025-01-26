@@ -10,7 +10,7 @@
 <body>
     <!-- Topbar Start -->
     <?php
-        //include_once("top_bar.php");
+        include_once("top_bar.php");
     ?>
     <!-- Topbar End -->
 
@@ -61,11 +61,13 @@
                     $cat_cat = $row->category;
                     $title = $row->title;
                     $randid = $row->rand_id;
+                    $img_url = ($row->img_url == '') ? 'jaf_market.png' : 'ads/'.$row->img_url;
+
 
                     echo '<div class="col-lg-2 col-md-4 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4" style="width:250px;">
                             <div class="product-img position-relative overflow-hidden">
-                                <a href="ads_details.php?rid='.$randid.'"> <img class="img-fluid w-100" src="img/jaf_market.png" alt="'.$title.'" ></a>
+                                <a href="ads_details.php?rid='.$randid.'"> <img class="img-fluid w-100" src="img/'.$img_url.'" alt="'.$title.'" style="height:200px;"></a>
                                 <div class="product-action">
                                     <a class="btn btn-outline-dark btn-square" href="ads_details.php?rid='.$randid.'"><i class="fa fa-search"></i></a>
                                 </div>

@@ -10,7 +10,7 @@
 <body>
     <!-- Topbar Start -->
     <?php
-        //include_once("top_bar.php");
+        include_once("top_bar.php");
     ?>
     <!-- Topbar End -->
 
