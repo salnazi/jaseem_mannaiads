@@ -1,5 +1,6 @@
 <div class="container-fluid bg-dark mb-30">
         <div class="row px-xl-5">
+            
             <div class="col-lg-3 d-none d-lg-block">
                 <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
                     <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Categories</h6>
@@ -21,7 +22,7 @@
             
                                 while($row = mysqli_fetch_object($sql))
                                 {
-                                    echo '<a href="search_ads.php?q='.$row->category.'" class="nav-item nav-link">'.$row->category.'</a>';
+                                    echo '<a href="" class="nav-item nav-link">'.$row->category.'</a>';
                                 }
                             ?>
                         </div>                       
@@ -29,39 +30,29 @@
                 </nav>
             </div>
 
-            <div class="col-lg-6" >
-                <a href="" class="text-decoration-none d-block d-lg-none">
-                    <img src="img/logo.png" style='background:var(--teal);'>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-light" style='background-color:var(--orange);color:var(--white);font-weight:bold;padding:12px;'>Submit your Ad</button>
-                    </div> 
-                </a>
-                
-                <form action="search_ads.php" method='POST'>
-                    <div class="input-group" style='margin-top:2px;' >
-                        <input type="text" name='q' class="form-control" placeholder="Search by category or keywords" style='height:48px;margin-top:7px;'>
-                       
-                            <span class="input-group-text bg-transparent text-primary" style='border:none;'>
-                                <input type='submit' value='Search' class='form-control' style='background:var(--orange);color:white;height:49px;font-weight:bold;'>
-                            </span>
-                       
-                    </div>
-                </form>
-                           
-            </div>
-
-             <div class="col-lg-3" >
+            <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
-                    
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <img src="img/logo.png" style='background:var(--teal);'>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
              
-                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block" style='margin-top:10px;'>
-                            <div class="nav-item dropdown">
-                            
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-light" style='background-color:var(--orange);color:var(--white);font-weight:bold;padding:12px;'>Submit your Ad</button>
-                            </div> 
-                            
+                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block" style='margin-top:14px;'>
+                        <div class="nav-item dropdown">
+                                <form action="">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search for products">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text bg-transparent text-primary">
+                                                <i class="fa fa-search"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>    
                     </div>
                 </nav>

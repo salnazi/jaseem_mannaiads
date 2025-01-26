@@ -10,7 +10,7 @@
 <body>
     <!-- Topbar Start -->
     <?php
-        include_once("top_bar.php");
+        //include_once("top_bar.php");
     ?>
     <!-- Topbar End -->
 
@@ -65,19 +65,13 @@
 
         <div class="container-fluid pb-5" >
             <div class="row px-xl-5">
-                <div class="col-lg-100 mb-30"  >
-                    <div id="product-carousel" class="carousel slide" data-ride="carousel" >
-                        <div class="carousel-inner bg-light" style='width:400px;'>
-                            <div class="carousel-item active" style='width:400px;'>
-                                <img class="w-100 h-100" src="img/jaf_market.png" alt="Image">
-                            </div>
-                        </div>                   
-                    </div>
+
+                <div class="col-lg-3 mb-30"  >
+                    <img class="w-100 h-100" src="img/jaf_market.png" alt="Image">
                 </div>
 
-                <div class="col-lg-7 h-auto mb-30">
-                    <div class="h-100 bg-light p-30">
-                        <h3 style='color:var(--orange);text-transform:uppercase;' ><?php echo $title; ?></h3>
+                <div class="col-lg-6 mb-30"  style='background:white;padding:20px;'>
+                    <h3 style='color:var(--orange);text-transform:uppercase;' ><?php echo $title; ?></h3>
                         <div class="d-flex mb-3">
                             <div class="text-primary mr-2" >
                                 <small class="fas fa-phone" style='color:red;font-size:15px;'>  &nbsp;<span style='color:var(--teal);'> <?php echo $phone; ?> <span> </small>
@@ -105,9 +99,12 @@
                         </p>
 
                         <h3 class="font-weight-semi-bold mb-4" style='font-size:12px;'>Calling Code : 04367 | Pincode : 614001 </h3>
-                        
-                    </div>
                 </div>
+
+                <div class="col-lg-3 mb-30"  >
+                    <img class="w-100 h-100" src="img/right_ad.jpg" alt="Image">
+                </div>
+              
             </div>
         </div>
        <?php
@@ -120,14 +117,14 @@
 
     <!-- Offer Start -->
     <?php
-        include_once("offer.php");
+        //include_once("offer.php");
     ?>
     <!-- Offer End -->
 
 
     <!-- Products Start -->
     <?php
-        include_once("recent_projects.php");
+        //include_once("recent_projects.php");
     ?>
     <!-- Products End -->
 

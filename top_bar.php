@@ -12,10 +12,6 @@
                 <div class="d-inline-flex align-items-center">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light" style='background-color:var(--orange);color:var(--white);font-weight:bold;padding:12px;'>Submit your Ad</button>
-                        <!--<div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">Sign in</button>
-                            <button class="dropdown-item" type="button">Sign up</button>
-                        </div>-->
                     </div>
                 </div>
                 

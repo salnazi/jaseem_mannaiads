@@ -13,15 +13,15 @@
                 echo '<div class="col-lg-2 col-md-4 col-sm-6 pb-1">
                     <div class="product-item bg-light mb-4" style="width:250px;">
                         <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/jaf_market.png" alt="">
+                            <a href="ads_details.php?rid='.$randid.'"> <img class="img-fluid w-100" src="img/jaf_market.png" alt="'.$title.'" ></a>
                             <div class="product-action">
                                 <a class="btn btn-outline-dark btn-square" href="ads_details.php?rid='.$randid.'"><i class="fa fa-search"></i></a>
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="detail.html" style="color:var(--orange);font-size:13px;" >'.$cat_cat.'</a>
+                            <a class="h6 text-decoration-none text-truncate" href="search_ads.php?q='.$cat_cat.'" style="color:var(--orange);font-size:13px;" >'.$cat_cat.'</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h6 style="color:var(--teal);">'.$title.'</h6>
+                                <h6 ><a href="ads_details.php?rid='.$randid.'" style="color:var(--teal);">'.$title.'</a></h6>
                             </div>
                         </div>
                     </div>

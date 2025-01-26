@@ -10,7 +10,7 @@
 <body>
     <!-- Topbar Start -->
     <?php
-        include_once("top_bar.php");
+        //include_once("top_bar.php");
     ?>
     <!-- Topbar End -->
 
@@ -52,14 +52,14 @@
 
     <!-- Offer Start -->
     <?php
-        include_once("offer.php");
+        //include_once("offer.php");
     ?>
     <!-- Offer End -->
 
 
     <!-- Products Start -->
     <?php
-        include_once("recent_projects.php");
+        //include_once("recent_projects.php");
     ?>
     <!-- Products End -->
 
